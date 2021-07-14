@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'mm-fa-5-regular';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/fa-regular-400.eot');
+	src: url('../fonts/fa-regular-400.eot?#iefix') format('embedded-opentype'), 
+		 url('../fonts/fa-regular-400.woff2') format('woff2'), 
+		 url('../fonts/fa-regular-400.woff') format('woff'), 
+		 url('../fonts/fa-regular-400.ttf') format('truetype'), 
+		 url('../fonts/fa-regular-400.svg#fontawesome') format('svg'); 
+}
+[class^="far "],
+[class$=" far"],
+[class*=" far "] {
+	font-family: mm-fa-5-regular;
+}

@@ -1,0 +1,94 @@
+/* Less Variables */
+// Theme variables
+@import 'variables.less';
+// HTML Elements
+body {
+    overflow-x: hidden;
+    line-height: 1.8;
+    // letter-spacing: 0.5px;
+}
+/* Webkit */
+::selection {
+    background: @textselectedbg;
+    color: @textselectedcolor;
+}
+/* Gecko/Mozilla */
+::-moz-selection {
+    background: @textselectedbg;
+    color: @textselectedcolor;
+}
+a {
+    color: @linkcolor;
+    -webkit-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+    &:hover {
+        color: @linkhovercolor;
+        text-decoration: none;
+    }
+    &:focus {
+        color: @linkhovercolor;
+        outline: none;
+        text-decoration: none;
+    }
+    &:active {
+        color: @linkactivecolor;
+    }
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: @headingcolor;
+    font-family: @headingfont;
+    font-weight: @headingfontweight;
+    letter-spacing: 0;
+    line-height: 1.3;
+    margin: 0 0 10px;
+}
+big {
+    font-size: 125%;
+}
+dd {
+    margin-bottom: 24px;
+}
+ul,
+ol {
+    padding-left: 20px;
+    margin: 0 0 1rem;
+}
+ul {
+    list-style: disc;
+}
+ol {
+    list-style: decimal;
+}
+ul ul, ul ol, ol ul, ol ol {
+    margin: 0 0 1rem;
+}
+table {
+    border-collapse: separate;
+    border-color: @bordercolor;
+    border-spacing: 0;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    margin-bottom: 24px;
+    width: 100%;
+    th,
+    td {
+        border-bottom: 1px solid @bordercolor;
+        border-right: 1px solid @bordercolor;
+        padding: 10px;
+    }
+}
+caption {
+    padding: 10px;
+}
+ins {
+    text-decoration: none;
+}
